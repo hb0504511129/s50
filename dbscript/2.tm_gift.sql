@@ -1,8 +1,8 @@
--- Table: tm_pkg
+-- Table: tm_gift
 
--- DROP TABLE tm_pkg;
+-- DROP TABLE tm_gift;
 
-CREATE TABLE tm_pkg
+CREATE TABLE tm_gift
 (
   name character varying(100) NOT NULL,
   num numeric(10,0),
@@ -12,7 +12,7 @@ CREATE TABLE tm_pkg
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE tm_pkg
+ALTER TABLE tm_gift
   OWNER TO postgres;
-COMMENT ON TABLE tm_pkg
+COMMENT ON TABLE tm_gift
   IS '红包后端数据';
