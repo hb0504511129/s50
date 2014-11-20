@@ -15,11 +15,16 @@ public class S50zy extends BaseController {
 	@Resource(name = "s50service")
 	private IS50service s50service;
 
-	@RequestMapping("actionrulePage.htm")
+	@RequestMapping("loginPage.do")
+	public ModelAndView loginPage(){
+		return new ModelAndView("loginPage", "msg", "请登录");
+	}
+
+	@RequestMapping("login.do")
 	public ModelAndView login(String username, String password) {
 		if(s50service.checkUserPwd(username, password)){
-			
+			return new ModelAndView("navigation");
 		}
-		return new ModelAndView("navigation");
+		return new ModelAndView("loginPage", "msg", "登录失败");
 	}
 }
