@@ -8,8 +8,8 @@ import javax.persistence.Table;
 import ttmy.framework.base.model.BaseEntity;
 
 @Entity
-@Table(name = "tm_pkg")
-public class Pkg extends BaseEntity {
+@Table(name = "tm_gift")
+public class Gift extends BaseEntity {
 
 	private static final long serialVersionUID = -4435174173285168018L;
 
