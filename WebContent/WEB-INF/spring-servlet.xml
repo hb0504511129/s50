@@ -47,6 +47,9 @@
 				<set>
 					<value>/loginPage.htm</value>
 					<value>/login.htm</value>
+					
+					<value>/loginPage.do</value>
+					<value>/login.do</value>
 				</set>
 			</property>
 		</bean>

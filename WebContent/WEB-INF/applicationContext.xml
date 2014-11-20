@@ -54,6 +54,7 @@
 		<property name="beanNames">
 			<list>
 				<value>*Service</value>
+				<value>*service</value>
 				<value>*Biz</value>
 			</list>
 		</property>
