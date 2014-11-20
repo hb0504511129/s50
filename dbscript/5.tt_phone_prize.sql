@@ -8,6 +8,7 @@ CREATE TABLE tt_phone_prize
   phone character varying(20) NOT NULL,
   pz character varying(200),
   addr character varying(200),
+  tm timestamp without time zone,
   CONSTRAINT tt_phone_prize_pkey PRIMARY KEY (phone)
 )
 WITH (
